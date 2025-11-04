@@ -30,15 +30,15 @@ Seu objetivo é fornecer uma **API RESTful estável e segura** para o gerenciame
 ````
 git clone https://github.com/lucas-andre-dev/imperium-backend.git
 ````
-### 2.Abrir o projeto
+### 2. Abrir o projeto
 
 Abra o projeto em uma IDE compatível, como IntelliJ IDEA ou VS Code.
 
-### 3.Criar o banco de dados MySQL
+### 3. Criar o banco de dados MySQL
 ````
 CREATE DATABASE imperium_db;
 ````
-### 4.Configurar o arquivo application.properties
+### 4. Configurar o arquivo application.properties
 ````
 spring.datasource.url=jdbc:mysql://localhost:3306/imperium_db
 spring.datasource.username=root
@@ -46,11 +46,11 @@ spring.datasource.password=sua_senha
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ````
-### 5.Executar o projeto
+### 5. Executar o projeto
 ````
 mvn spring-boot:run
 ````
-### 6.Acessar a API
+### 6. Acessar a API
 ````
 http://localhost:8080
 ````
