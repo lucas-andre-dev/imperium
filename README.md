@@ -42,8 +42,8 @@ CREATE DATABASE imperium_db;
 O projeto já está configurado com as dependências do MySQL no Maven.
 ````
 spring.datasource.url=jdbc:mysql://localhost:3306/imperium_db
-spring.datasource.username=root      <---------------Coloca o usuario do seu banco de dados
-spring.datasource.password=sua_senha <---------------Coloca a senha do seu banco de dados
+spring.datasource.username= aqui-coloque-username-de-login-ao-banco
+spring.datasource.password= aqui-coloque-senha-de-login-ao-banco
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ````
