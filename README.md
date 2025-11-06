@@ -40,26 +40,18 @@ CREATE DATABASE imperium_db;
 ````
 ### 4. Configurar o arquivo application.properties
 O projeto já está configurado com as dependências do MySQL no Maven.
-Caso deseje utilizar outro banco de dados, será necessário substituir a dependência correspondente.
-
-Para isso, procure a dependência oficial do banco desejado no repositório
 ````
-https://mvnrepository.com/
-
-
 spring.datasource.url=jdbc:mysql://localhost:3306/imperium_db
-spring.datasource.username=root      <------------------------------Coloca o usuario do seu banco de dados
-spring.datasource.password=sua_senha <----------------------------- Coloca a senha do seu banco de dados
+spring.datasource.username=root      <---------------Coloca o usuario do seu banco de dados
+spring.datasource.password=sua_senha <---------------Coloca a senha do seu banco de dados
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 ````
 ### 5. Executar o projeto
-Se você estiver usando Spring Boot dentro do IntelliJ ou Eclipse, pode rodar direto sem terminal:
-
-Eclipse: botão direito na classe ImperiumApplication → Run As → Spring Boot App
+Se você estiver usando Spring Boot dentro do IntelliJ, pode rodar direto sem terminal:
 
 IntelliJ: clique no ícone ▶️ Run ao lado da classe ImperiumApplication.
-Alternativamente, você pode executar o projeto pelo terminal da IDE utilizando o comando:
+Caso preferir, você pode executar o projeto pelo terminal da IDE utilizando o comando:
 ````
 mvn spring-boot:run
 ````
