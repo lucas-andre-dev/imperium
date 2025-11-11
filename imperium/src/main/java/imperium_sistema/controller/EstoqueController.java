@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(value = "*")
+@CrossOrigin(origins = "*")
 @RequestMapping("estoque")
 public class EstoqueController {
 
@@ -26,19 +26,19 @@ public class EstoqueController {
 
     // ALTERAR
     @PutMapping
-    public void alterarProd(EstoqueEntity estoqueEntity){
+    public void alterarProd( EstoqueEntity estoqueEntity){
         estoqueService.alterarProd(estoqueEntity) ;
     }
 
     // CRIAR
     @PostMapping
-    public void criarProd(EstoqueEntity estoqueEntity){
+    public void criarProd(@RequestBody EstoqueEntity estoqueEntity){
         estoqueService.adicionarProd(estoqueEntity);
     }
 
     // DELETAR
     @DeleteMapping("excluir/{id}")
-    public void deletarProd(Long id){
+    public void deletarProd(@PathVariable Long id){
         estoqueService.deletarProd(id);
 
     }
