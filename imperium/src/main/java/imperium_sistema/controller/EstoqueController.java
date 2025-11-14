@@ -26,7 +26,7 @@ public class EstoqueController {
 
     // ALTERAR
     @PutMapping
-    public void alterarProd( EstoqueEntity estoqueEntity){
+    public void alterarProd(@RequestBody EstoqueEntity estoqueEntity){
         estoqueService.alterarProd(estoqueEntity) ;
     }
 
