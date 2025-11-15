@@ -13,9 +13,16 @@
 	<name>imperium</name>
 	<description>Projeto Spring Boot Imperium</description>
 
+	<!-- Adicionando parent do Spring Boot -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.5.7</version>
+		<relativePath/> <!-- evita procurar localmente -->
+	</parent>
+
 	<properties>
 		<java.version>17</java.version>
-		<spring-boot.version>3.5.7</spring-boot.version>
 	</properties>
 
 	<dependencies>
@@ -73,7 +80,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring-boot.version}</version>
 				<configuration>
 					<mainClass>imperium_sistema.ImperiumApplication</mainClass>
 				</configuration>
